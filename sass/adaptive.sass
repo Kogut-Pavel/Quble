@@ -1,0 +1,241 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.footer
+		&__newsletter
+			margin-left: 0
+	
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	section
+		padding: 80px 0 !important
+
+	.promo
+		padding: 0 !important
+		&__info
+			gap: 16px
+			h1
+				font-size: 44px
+	
+	.reviews
+		height: 100vh
+		display: flex
+		align-items: center
+
+
+	.partners
+		padding: 120px 0
+		h2
+			margin: 0 auto
+		&__trusted
+			display: block
+			margin: 35px auto 40px auto
+		&__list
+			max-width: 100%
+			justify-content: space-between
+			margin: 0 auto
+			margin-bottom: 80px
+			gap: 30px
+			img
+				max-height: 60px
+
+	#form-wrapper 
+		margin: 0 auto
+
+	.footer
+		&__descr 
+			max-width: 100%
+		&__wrapper-lists
+			margin-bottom: 30px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.tag
+		margin: 0 auto
+		font-size: 14px
+
+	.btn 
+		font-size: 14px
+
+	.title
+		&_h2
+			font-size: 28px
+			margin: 0 auto
+
+	.header
+		&__menu 
+			gap: 25px
+		&__right-side
+			.btn
+				display: none
+
+	
+	.promo
+		height: 130vh
+		&__main
+			margin-top: 0
+		&__info 
+			h1
+				margin: 0 auto
+				font-size: 40px
+				line-height: 44px
+		&__img
+			width: 80%
+			margin: 0 auto
+		&__btns 
+			margin: 0 auto
+
+	section 
+		padding: 60px 0 !important
+
+	.advantages
+		&__inner
+			gap: 20px
+		&__bottom
+			justify-content: center
+			gap: 16px
+		&__item
+			max-width: 300px
+			gap: 10px
+
+	.information
+		&__img 
+			display: none
+		&__block
+			gap: 16px
+			p
+				text-align: center
+		&__item + &__item 
+			padding-top: 60px
+
+	.reviews
+		min-height: 100vh
+		&__item-quotes
+			min-height: 90px
+			margin-bottom: 5px
+			font-size: 16px
+			line-height: 120%
+		&__item
+			font-size: 14px
+			img
+				margin-bottom: 20px
+		&__line 
+			margin: 25px 0
+		&__nav 
+			justify-content: space-around
+			gap: 30px
+
+	.partners
+		&__trusted
+			margin: 30px auto
+		&__list
+			max-width: 424px
+			justify-content: space-around
+			gap: 40px 50px
+	
+	.footer 
+		padding: 40px 0 20px 0
+		&__wrapper-lists
+			gap: 30px
+		&__newsletter
+			margin-bottom: 20px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.hamburger 
+		display: block
+		z-index: 99
+
+	.header
+		position: relative
+		&__menu
+			display: none
+			position: absolute
+			top: 76px
+			left: 0
+			right: 0
+			width: 100%
+			box-shadow: 0 3px 6px $gray
+			background-color: #fff
+			padding: 10px 0
+			z-index: 11
+			li 
+				display: block
+				a
+					padding: 5px 15px
+		&__sub-menu
+			background-color: #fff
+			display: block
+			position: relative
+			top: auto
+			box-shadow: none
+			animation: none
+			padding-left: 15px
+			opacity: 1
+		&__item_has-sub-menu
+			&::after
+				display: none
+
+	.promo
+		height: 115%
+		&__main
+			height: auto
+		&__info
+			text-align: center
+			h1 
+				margin: 0 auto
+				font-size: 34px
+				line-height: 38px
+		&__btns 
+			margin: 0 auto
+
+	.title
+		&_h2
+			font-size: 24px
+			text-align: center
+
+	section 
+		padding: 40px 0 !important
+
+	.reviews
+		&__nav
+			gap: 25px
+			img 
+				max-width: 40%
+
+	.partners
+		&__list
+			margin-bottom: 60px
+			img
+				max-height: 40px
+
+	#form-wrapper
+		max-width: 100%
+		.form
+			height: 100%
+			top: -18px
+			max-width: 95%
+			padding: 24px 20px
+			gap: 14px
+
+	.footer
+		&__wrapper-lists
+			margin-bottom: 20px
+			gap: 30px 70px
+			flex-wrap: wrap
+		&__list
+			gap: 16px
+			> ul
+				gap: 12px
+		&__descr
+			margin: 10px 0 20px 0
+			line-height: 150%
+		&__copyright
+			margin-top: 40px
+			&-author a,
+			&-dev a
+				font-size: 13px
