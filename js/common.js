@@ -4,15 +4,27 @@ $(function() {
 
 	// Mobile menu
 
-	$(".hamburger").click(function(){
-		$(this).toggleClass("is-active");
+	const toggleMenu = event => {
+        const target = event.target;
+        let menuBtn = document.querySelector('.hamburger');
+        let menu = document.querySelector('.header__menu');
 
-		if($(this).hasClass('is-active')){
-			$('.header__menu').slideDown(300);
-		}else{
-			$('.header__menu').slideUp(300);
-		}
-	});
+        const showMenu = () => {
+            menuBtn.classList.toggle('is-active');
+            menu.classList.toggle('active');
+        };
+
+        if (target.closest('.hamburger')) {
+            showMenu();
+        } else if (!target.classList.contains('active') && !target.closest('.header__menu') && menuBtn.classList.contains('is-active')) {
+            showMenu();
+        } else if (target.classList.contains('anchor')) {
+            showMenu();
+        }
+    
+    };
+
+    document.addEventListener('click', toggleMenu);
 
 	// Reviews Tabs
 

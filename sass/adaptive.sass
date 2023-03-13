@@ -7,7 +7,6 @@
 	.footer
 		&__newsletter
 			margin-left: 0
-	
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -20,12 +19,11 @@
 			gap: 16px
 			h1
 				font-size: 44px
-	
+
 	.reviews
 		height: 100vh
 		display: flex
 		align-items: center
-
 
 	.partners
 		padding: 120px 0
@@ -43,11 +41,11 @@
 			img
 				max-height: 60px
 
-	#form-wrapper 
+	#form-wrapper
 		margin: 0 auto
 
 	.footer
-		&__descr 
+		&__descr
 			max-width: 100%
 		&__wrapper-lists
 			margin-bottom: 30px
@@ -58,7 +56,7 @@
 		margin: 0 auto
 		font-size: 14px
 
-	.btn 
+	.btn
 		font-size: 14px
 
 	.title
@@ -67,18 +65,17 @@
 			margin: 0 auto
 
 	.header
-		&__menu 
+		&__menu
 			gap: 25px
 		&__right-side
 			.btn
 				display: none
 
-	
 	.promo
 		height: 130vh
 		&__main
 			margin-top: 0
-		&__info 
+		&__info
 			h1
 				margin: 0 auto
 				font-size: 40px
@@ -86,10 +83,10 @@
 		&__img
 			width: 80%
 			margin: 0 auto
-		&__btns 
+		&__btns
 			margin: 0 auto
 
-	section 
+	section
 		padding: 60px 0 !important
 
 	.advantages
@@ -103,13 +100,13 @@
 			gap: 10px
 
 	.information
-		&__img 
+		&__img
 			display: none
 		&__block
 			gap: 16px
 			p
 				text-align: center
-		&__item + &__item 
+		&__item + &__item
 			padding-top: 60px
 
 	.reviews
@@ -123,9 +120,9 @@
 			font-size: 14px
 			img
 				margin-bottom: 20px
-		&__line 
+		&__line
 			margin: 25px 0
-		&__nav 
+		&__nav
 			justify-content: space-around
 			gap: 30px
 
@@ -136,8 +133,8 @@
 			max-width: 424px
 			justify-content: space-around
 			gap: 40px 50px
-	
-	.footer 
+
+	.footer
 		padding: 40px 0 20px 0
 		&__wrapper-lists
 			gap: 30px
@@ -146,14 +143,14 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	.hamburger 
+	.hamburger
 		display: block
 		z-index: 99
 
 	.header
 		position: relative
 		&__menu
-			display: none
+			display: block
 			position: absolute
 			top: 76px
 			left: 0
@@ -163,10 +160,14 @@
 			background-color: #fff
 			padding: 10px 0
 			z-index: 11
-			li 
+			transform: translateX(-100%)
+			transition: all 0.3s ease
+			li
 				display: block
 				a
 					padding: 5px 15px
+		&__menu.active
+			transform: translateX(0)
 		&__sub-menu
 			background-color: #fff
 			display: block
@@ -186,11 +187,11 @@
 			height: auto
 		&__info
 			text-align: center
-			h1 
+			h1
 				margin: 0 auto
 				font-size: 34px
 				line-height: 38px
-		&__btns 
+		&__btns
 			margin: 0 auto
 
 	.title
@@ -198,13 +199,13 @@
 			font-size: 24px
 			text-align: center
 
-	section 
+	section
 		padding: 40px 0 !important
 
 	.reviews
 		&__nav
 			gap: 25px
-			img 
+			img
 				max-width: 40%
 
 	.partners
